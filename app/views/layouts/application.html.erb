@@ -11,14 +11,11 @@
   <body>
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <a href="#" class="navbar-brand">ProtégeteApp Network </a>
+          <a href="#index" class="navbar-brand">ProtégeteApp Network </a>
           <ul class="nav navbar-var">
               <li class="active"> <%= link_to "Status", timeline_path %></li>
-              <li class="active"> <a href="http://protegeteapp.blogspot.com.co">Blog Protégete</a></li>
-              <li class="active"> <a href="https://play.google.com/store/apps/details?id=com.protegete.app.protegeteapp">App en Android</a></li>
           </ul>
-          
-       </div>
+        </div>
        <p class="nav navbar-nav pull-right">
         <% if user_signed_in? %>
              Logged in as <strong><%= current_user.email %></strong>.
@@ -48,6 +45,42 @@
        <%= yield %>
 
     </div>
+
+    <div class="container well">
+  	<h2><center>ProtégeteApp Social Network</center></h2>
+  </div>
+  <div id="footer">
+      <div class="container">
+          <div class="row">
+              <h3 class="footertext">Sobre Nosotros</h3>
+              <br>
+                <div class="col-md-4">
+                  <center>
+                    <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                    <br>
+                    <h4 class="footertext"><a href="http://protegeteapp.blogspot.com.co">Blog Protégete</a></h4>
+                </center>
+                </div>
+                <div class="col-md-4">
+                  <center>
+                    <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                    <br>
+                    <h4 class="footertext"><a href="https://play.google.com/store/apps/details?id=com.protegete.app.protegeteapp">App en Android</a></h4>
+                  </center>
+                </div>
+                <div class="col-md-4">
+                  <center>
+                    <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                    <br>
+                    <h4 class="footertext"><a href="https://www.facebook.com/protegeteapp">Facebook</a></h4>
+                  </center>
+                </div>
+              </div>
+              <div class="row">
+              <p><center><a href="#">Bootcamp Capital Junior College</a> <p class="footertext">Copyright 2016</p></center></p>
+          </div>
+      </div>
+  </div>
 
 
   </body>
